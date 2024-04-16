@@ -1,6 +1,6 @@
 body {
     background-color:#EEF5FF;
-   margin:0;
+    margin:0;
     padding: 0;
 }
 
@@ -101,7 +101,6 @@ ul {
 
 /*experience*/
 
-
 .timeline {
     display:flex;
     flex-wrap: wrap;
@@ -171,10 +170,6 @@ ul {
 }
 
 
-
-
-    
-  
 
 /*portfolio*/
 
@@ -342,36 +337,38 @@ form {
 }
 
 
-/** different size screen */ 
+/*monitor*/
 
-
-/*Mobile Devices*/
-@media (max-width: 650px){
-    .year {
-        grid-template-rows: auto auto 50px 1fr;
-      }
-    .ownnav ul {
-        font-size: 15px;
-        padding: 10px;
+@media (max-width: 2800px){
+    /*introduction section*/
+    .intro h1{
+        font-size: 80px;
     }
-    
-    .intro h1 img {
-        display: none;
-       
+    .intro h1 img{
+        height: 100px;
+    }
+    .intro h2{
+        font-size: 30px;
     }
     
     
-}
-/*devices size at around 800px*/
+    
+    /* portfolio section */
+
+    #portfolio {
+        margin-top: 150px;
+    }
+} 
 
 
-/*Small Screens, Ipads*/
+/*Small Screens, Ipads, laptops*/
 @media (max-width: 1024px){
     /*nav*/
     .ownnav ul {        
         justify-content: center;
         gap: 30px;
     }
+   
     /*introduction section*/
     .intro {
         display: block;
@@ -418,29 +415,83 @@ form {
 
 
 
-/*monitor*/
+
+/*phone*/
 
 
-@media (max-width: 2800px){
-    /*introduction section*/
-    .intro h1{
-        font-size: 80px;
+
+@media (max-width: 630px){
+    /*timeline*/
+    .year {
+        grid-template-rows: auto auto 50px 1fr;
+      }
+
+    /*navigation*/  
+    .ownnav ul {
+        font-size: 13px;
+        gap: 15px;
+        width: 100%;        
     }
-    .intro h1 img{
+    /*introduction*/
+    .intro h1 {
+        font-size: 40px;
+        margin:auto;
+        margin-top: 50px;
+    }
+
+    .intro .img img {
+        height: 250px;
+    }
+
+    .intro h1 img {
+        display: none;
+       
+    }
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .intro {
+        height: 50vh;
+    }
+
+    .pheader {
+        font-size: 25px;
+        margin-left: 130px;
+    }
+
+
+   /*portfolio*/
+    
+    .section {
+        width: 100vw;
+    }
+    
+    .subtitle {
+        background-color: white;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 30px;
+    }
+   
+    
+    .innerimg img{
+        height: 200px;
+        width: 100%;
+    }
+    /*contact*/
+
+    .contact .pheader {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    #longinput {
+        width: 300px;
         height: 100px;
     }
-    .intro h2{
-        font-size: 30px;
-    }
-    /*timeline section*/
     
-    
-    /* portfolio section */
-
-    #portfolio {
-        margin-top: 150px;
-    }
-} 
+}
 
 
 
